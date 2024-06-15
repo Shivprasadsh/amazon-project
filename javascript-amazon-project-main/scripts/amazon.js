@@ -82,7 +82,9 @@ ${(product.priceCents/100).toFixed(2)}
 </div>
 
     `;
-    document.querySelector('.js-products.gird').
-    innerHTML=productsHTML
+    console.log(productsHTML);
+
+    document.querySelector('.js-products-gird')
+    .innerHTML = productsHTML;
 
 })
