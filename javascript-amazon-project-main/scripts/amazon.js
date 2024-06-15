@@ -87,8 +87,16 @@ ${(product.priceCents/100).toFixed(2)}
               })
           }
 
+          let cartQuantity = 0;
+          cart.forEach((item)=>{
+            cartQuantity+=item.quantity
 
-          console.log(cart);
+          });
+          document.querySelector('.js-cart-qunatity')
+          .innerHTML = cartQuantity
+
+
+          
         })
 
     })
